@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Crea tus tarjetas de felicitación</h1>
+    <form id="greetingForm">
+        <label for="name">Para:</label>
+        <input type="text" id="name" required>
+        <br>
+        <label for="message">Mensaje:</label>
+        <textarea id="message" required></textarea>
+        <br>
+        <label for="cardSelect">Selecciona una ocasion:</label>
+        <select id="cardSelect">
+            <option value="0">Cumpleaños</option>
+            <option value="1">Aniversario</option>
+        </select>
+        <br>
+        <button type="button" onclick="generateCard()">Generar Tarjeta</button>
+    </form>
+    <div id="greetingCard" style="display: none;"></div>
+    <script src="main.js"></script>
+</body>
+</html>
